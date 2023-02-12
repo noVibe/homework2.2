@@ -76,6 +76,7 @@ public class Main {
         Human dan = new Human("Dan");
         Consumer<Human> cons = h -> System.out.println(ternaryOperator(condition, ifTrue, ifFalse).apply(h));
         cons.accept(supHuman.get());
+        cons.accept(dan);
 
     }
 
